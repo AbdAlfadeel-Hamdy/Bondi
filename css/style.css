@@ -1,6 +1,8 @@
 :root {
   --dark-color: #19283f;
   --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -39,3 +41,18 @@ body {
 }
 
 /* End Navbar */
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+/* Start Landing Section */
+.landing {
+  background-color: var(--dark-color);
+  min-height: calc(100vh - 70px);
+}
+/* End Landing Section */
