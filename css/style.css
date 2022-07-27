@@ -3,6 +3,7 @@
   --green-color: #33d1cc;
   --red-color: #ff3150;
   --yellow-color: #ffc400;
+  --main-color: #eff7fa;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -50,9 +51,36 @@ body {
   color: #fff;
   border-color: #fff;
 }
+.main-title::after {
+  content: "";
+  position: absolute;
+  background-color: var(--green-color);
+  width: 120px;
+  bottom: -20px;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 /* Start Landing Section */
 .landing {
   background-color: var(--dark-color);
   min-height: calc(100vh - 70px);
 }
 /* End Landing Section */
+.icon-holder {
+  height: 200px;
+}
+.features h4 {
+  color: var(--yellow-color);
+}
+.number {
+  font-size: 12rem;
+  color: var(--main-color);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.icon {
+  color: var(--green-color);
+  left: 50%;
+  transform: translateX(-50%);
+}
