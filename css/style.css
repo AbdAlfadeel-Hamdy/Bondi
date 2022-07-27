@@ -8,6 +8,30 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+/* Components */
+.main-btn {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+  padding: 0.5rem 1rem;
+}
+.main-btn:hover {
+  color: #fff;
+  border-color: #fff;
+}
+.main-btn.hover-dark:hover {
+  color: var(--dark-color);
+  border-color: var(--dark-color);
+}
+.main-title::after {
+  content: "";
+  position: absolute;
+  background-color: var(--green-color);
+  width: 120px;
+  bottom: -20px;
+  height: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 
 /* Start Navbar */
 .navbar {
@@ -42,31 +66,15 @@ body {
 }
 
 /* End Navbar */
-.main-btn {
-  background-color: var(--red-color);
-  color: var(--yellow-color);
-  padding: 0.5rem 1rem;
-}
-.main-btn:hover {
-  color: #fff;
-  border-color: #fff;
-}
-.main-title::after {
-  content: "";
-  position: absolute;
-  background-color: var(--green-color);
-  width: 120px;
-  bottom: -20px;
-  height: 2px;
-  left: 50%;
-  transform: translateX(-50%);
-}
+
 /* Start Landing Section */
 .landing {
   background-color: var(--dark-color);
   min-height: calc(100vh - 70px);
 }
 /* End Landing Section */
+/* Start Features Section */
+
 .icon-holder {
   height: 200px;
 }
@@ -84,3 +92,46 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+/* End Features Section */
+
+/* Start Our Work Section */
+.ourwork {
+  background-color: var(--main-color);
+}
+.ourwork ul li {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+}
+.ourwork ul li.active {
+  background-color: #ff3150;
+  color: var(--yellow-color);
+}
+.ourwork ul li:not(.active):hover {
+  color: var(--red-color);
+}
+.ourwork .box {
+  padding: 5px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.ourwork .box::before {
+  content: attr(data-work);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  background-color: #33d1cc9e;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  transform: translateX(calc(-100% - 5px));
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.ourwork .box:hover::before {
+  transform: translateX(0);
+}
+/* End Our Work Section */
