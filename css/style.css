@@ -8,7 +8,9 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-/* Components */
+/* ******************************************* */
+/* COMPONENTS*/
+/* ******************************************* */
 .main-btn {
   background-color: var(--red-color);
   color: var(--yellow-color);
@@ -33,7 +35,9 @@ body {
   transform: translateX(-50%);
 }
 
-/* Start Navbar */
+/* ******************************************* */
+/* NAV BAR*/
+/* ******************************************* */
 .navbar {
   background-color: var(--dark-color);
 }
@@ -64,16 +68,16 @@ body {
   color: var(--green-color);
   border-left: 1px solid var(--green-color);
 }
-
-/* End Navbar */
-
-/* Start Landing Section */
+/* ******************************************* */
+/* LANDING SECTION  */
+/* ******************************************* */
 .landing {
   background-color: var(--dark-color);
   min-height: calc(100vh - 70px);
 }
-/* End Landing Section */
-/* Start Features Section */
+/* ******************************************* */
+/* FEATURES SECTION  */
+/* ******************************************* */
 
 .icon-holder {
   height: 200px;
@@ -92,9 +96,10 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-/* End Features Section */
 
-/* Start Our Work Section */
+/* ******************************************* */
+/* OURWORK SECTION  */
+/* ******************************************* */
 .ourwork {
   background-color: var(--main-color);
 }
@@ -134,4 +139,11 @@ body {
 .ourwork .box:hover::before {
   transform: translateX(0);
 }
-/* End Our Work Section */
+
+/* ******************************************* */
+/* STUFF SECTION  */
+/* ******************************************* */
+
+.stuff .description {
+  max-width: 500px;
+}
