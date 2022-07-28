@@ -15,6 +15,7 @@ body {
   background-color: var(--red-color);
   color: var(--yellow-color);
   padding: 0.5rem 1rem;
+  text-transform: uppercase;
 }
 .main-btn:hover {
   color: #fff;
@@ -158,4 +159,10 @@ body {
 
 .team h4 {
   background-color: var(--green-color);
+}
+/* ******************************************* */
+/* PROJECT SECTION  */
+/* ******************************************* */
+.project {
+  background-color: var(--dark-color);
 }
